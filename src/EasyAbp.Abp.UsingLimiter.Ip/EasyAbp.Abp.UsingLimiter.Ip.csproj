@@ -4,6 +4,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>EasyAbp.Abp.UsingLimiter.Ip</RootNamespace>
+    <Description>ABP vNext framework Limiter Ip module.</Description>
   </PropertyGroup>
 
   <ItemGroup>

@@ -4,6 +4,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>EasyAbp.Abp.UsingLimiter.Client</RootNamespace>
+    <Description>ABP vNext framework Limiter Client module.</Description>
   </PropertyGroup>
 
   <ItemGroup>

@@ -4,6 +4,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>EasyAbp.Abp.UsingLimiter</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
