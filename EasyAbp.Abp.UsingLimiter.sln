@@ -7,9 +7,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{649A3FFA-182
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CCD2960C-23CC-4AB4-B84D-60C7AAA52F4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.UsingLimiter", "src\EasyAbp.Abp.UsingLimiter\EasyAbp.Abp.UsingLimiter.csproj", "{F26B6909-9CE2-4B47-93F6-302F143DA06E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.UsingLimiter", "src\EasyAbp.Abp.UsingLimiter\EasyAbp.Abp.UsingLimiter.csproj", "{F26B6909-9CE2-4B47-93F6-302F143DA06E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.UsingLimiter.Tests", "test\EasyAbp.Abp.UsingLimiter.Tests\EasyAbp.Abp.UsingLimiter.Tests.csproj", "{3746C42B-5BF0-4B20-A7E4-3CE0C7251655}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.UsingLimiter.Tests", "test\EasyAbp.Abp.UsingLimiter.Tests\EasyAbp.Abp.UsingLimiter.Tests.csproj", "{3746C42B-5BF0-4B20-A7E4-3CE0C7251655}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.UsingLimiter.Client", "src\EasyAbp.Abp.UsingLimiter.Client\EasyAbp.Abp.UsingLimiter.Client.csproj", "{C206EEEF-7282-4423-892C-7496AF81E6DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.UsingLimiter.Ip", "src\EasyAbp.Abp.UsingLimiter.Ip\EasyAbp.Abp.UsingLimiter.Ip.csproj", "{91B69962-9D95-4AA2-99A0-47048522D542}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyAbp.Abp.UsingLimiter.Sample", "test\EasyAbp.Abp.UsingLimiter.Sample\EasyAbp.Abp.UsingLimiter.Sample.csproj", "{551D8560-E0F1-4749-8683-BF59CB630E69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6099E90D-409B-44D3-A499-8854F723191B}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +36,18 @@ Global
 		{3746C42B-5BF0-4B20-A7E4-3CE0C7251655}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3746C42B-5BF0-4B20-A7E4-3CE0C7251655}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3746C42B-5BF0-4B20-A7E4-3CE0C7251655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C206EEEF-7282-4423-892C-7496AF81E6DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C206EEEF-7282-4423-892C-7496AF81E6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C206EEEF-7282-4423-892C-7496AF81E6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C206EEEF-7282-4423-892C-7496AF81E6DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91B69962-9D95-4AA2-99A0-47048522D542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B69962-9D95-4AA2-99A0-47048522D542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B69962-9D95-4AA2-99A0-47048522D542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B69962-9D95-4AA2-99A0-47048522D542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{551D8560-E0F1-4749-8683-BF59CB630E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{551D8560-E0F1-4749-8683-BF59CB630E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{551D8560-E0F1-4749-8683-BF59CB630E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{551D8560-E0F1-4749-8683-BF59CB630E69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +55,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F26B6909-9CE2-4B47-93F6-302F143DA06E} = {649A3FFA-182F-4E56-9717-E6A9A2BEC545}
 		{3746C42B-5BF0-4B20-A7E4-3CE0C7251655} = {CCD2960C-23CC-4AB4-B84D-60C7AAA52F4D}
+		{C206EEEF-7282-4423-892C-7496AF81E6DD} = {649A3FFA-182F-4E56-9717-E6A9A2BEC545}
+		{91B69962-9D95-4AA2-99A0-47048522D542} = {649A3FFA-182F-4E56-9717-E6A9A2BEC545}
+		{551D8560-E0F1-4749-8683-BF59CB630E69} = {CCD2960C-23CC-4AB4-B84D-60C7AAA52F4D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4324B3B4-B60B-4E3C-91D8-59576B4E26DD}
