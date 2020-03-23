@@ -12,9 +12,9 @@ PM> Install-Package EasyAbp.Abp.UsingLimiter.Client
 PM> Install-Package EasyAbp.Abp.UsingLimiter.Ip
 ```
 
-   1.  Added `[DependsOn(typeof(AbpLimiterModule))]` attribute to the module.
-   1.  Added `[DependsOn(typeof(AbpClientLimiterModule))]` attribute to the module.
-   1.  Added `[DependsOn(typeof(AbpIpLimiterModule))]` attribute to the module.
+- Added `[DependsOn(typeof(AbpLimiterModule))]` attribute to the module.
+- Added `[DependsOn(typeof(AbpClientLimiterModule))]` attribute to the module.
+- Added `[DependsOn(typeof(AbpIpLimiterModule))]` attribute to the module.
 
 2、Extends IHostBuilder with Limiter configuration methods.
 
@@ -22,7 +22,7 @@ PM> Install-Package EasyAbp.Abp.UsingLimiter.Ip
 IHostBuilder.UseAbpLimiter(RateLimitType.All);
 ```
 
-3、Declare the following namespace within AppModule.cs
+3、Declare the following namespace within `AppModule.cs`
 
 ```csharp
 using EasyAbp.Abp.UsingLimiter.DependencyInjection;
@@ -35,14 +35,14 @@ using EasyAbp.Abp.UsingLimiter.Ip.DependencyInjection;
 
 ```
 
-4、Register the middleware 
+4、Register the middleware below within the `OnApplicationInitialization()` method of `AppModule.cs` "before" the `UseRouting()` `middleware`:
 
 ```csharp
 app.UseIpRateLimiting();
 app.UseClientRateLimiting();
 ```
 
-5、Add the following code at ConfigureServices() method 
+5、Add the following code at `ConfigureServices()` method 
 
 ```csharp
   context.Services.AddLimiterService<MemoryCacheRateLimitCounterStore>(service =>
