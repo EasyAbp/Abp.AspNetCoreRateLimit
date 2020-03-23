@@ -12,9 +12,9 @@ PM> Install-Package EasyAbp.Abp.UsingLimiter.Client
 PM> Install-Package EasyAbp.Abp.UsingLimiter.Ip
 ```
 
-- Added `[DependsOn(typeof(AbpLimiterModule))]` attribute to the module.
-- Added `[DependsOn(typeof(AbpClientLimiterModule))]` attribute to the module.
-- Added `[DependsOn(typeof(AbpIpLimiterModule))]` attribute to the module.
+   1.  Added `[DependsOn(typeof(AbpLimiterModule))]` attribute to the module.
+   1.  Added `[DependsOn(typeof(AbpClientLimiterModule))]` attribute to the module.
+   1.  Added `[DependsOn(typeof(AbpIpLimiterModule))]` attribute to the module.
 
 2¡¢Extends IHostBuilder with Limiter configuration methods.
 
