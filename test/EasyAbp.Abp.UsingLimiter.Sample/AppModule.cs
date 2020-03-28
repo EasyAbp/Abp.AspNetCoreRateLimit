@@ -14,8 +14,7 @@ using Volo.Abp.Modularity;
 namespace EasyAbp.Abp.UsingLimiter.Sample
 {
     [DependsOn(
-        typeof(AbpLimiterModule),
-         typeof(AbpClientLimiterModule),  
+        typeof(AbpClientLimiterModule),  
         typeof(AbpIpLimiterModule),
         typeof(AbpAutofacModule),
          typeof(AbpAspNetCoreMvcModule)

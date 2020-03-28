@@ -4,6 +4,7 @@ using Volo.Abp.Modularity;
 
 namespace EasyAbp.Abp.UsingLimiter.Client
 {
+    [DependsOn(typeof(AbpLimiterModule))]
     public class AbpClientLimiterModule: AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
