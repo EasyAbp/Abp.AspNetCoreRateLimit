@@ -22,14 +22,14 @@ IHostBuilder.UseAspNetCoreRateLimitIp();
 IHostBuilder.UseAspNetCoreRateLimitClient();
 ```
 
-4.Register the middleware below within the `OnApplicationInitialization()` method of `AppModule.cs` "before" the `UseRouting()` `middleware`:
+3.Register the middleware below within the `OnApplicationInitialization()` method of `AppModule.cs` "before" the `UseRouting()` `middleware`:
 
 ```csharp
 app.UseIpRateLimiting();
 app.UseClientRateLimiting();
 ```
 
-5.Add the following code at `ConfigureServices()` method 
+4.Add the following code at `ConfigureServices()` method 
 
 ```csharp
   context.Services.AddLimiterService<MemoryCacheRateLimitCounterStore>(service =>
