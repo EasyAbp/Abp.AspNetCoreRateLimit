@@ -4,7 +4,7 @@ An Abp module helps you control how often your service is used.
 
 # Getting Started
 
-1、Download and Install the latest `Abp.UsingLimiter` from NuGet or via CLI:
+1.Download and Install the latest `Abp.UsingLimiter` from NuGet or via CLI:
 
 ```
 PM> Install-Package EasyAbp.Abp.UsingLimiter
@@ -16,33 +16,20 @@ PM> Install-Package EasyAbp.Abp.UsingLimiter.Ip
    1.  Added `[DependsOn(typeof(AbpClientLimiterModule))]` attribute to the module.
    1.  Added `[DependsOn(typeof(AbpIpLimiterModule))]` attribute to the module.
 
-2、Extends IHostBuilder with Limiter configuration methods.
+2.Extends IHostBuilder with Limiter configuration methods.
 
 ```csharp
 IHostBuilder.UseAbpLimiter(RateLimitType.All);
 ```
 
-3、Declare the following namespace within `AppModule.cs`
-
-```csharp
-using EasyAbp.Abp.UsingLimiter.DependencyInjection;
-//client rate limiting
-using EasyAbp.Abp.UsingLimiter.Client;
-using EasyAbp.Abp.UsingLimiter.Client.DependencyInjection;
-//Ip rate limiting
-using EasyAbp.Abp.UsingLimiter.Ip;
-using EasyAbp.Abp.UsingLimiter.Ip.DependencyInjection;
-
-```
-
-4、Register the middleware below within the `OnApplicationInitialization()` method of `AppModule.cs` "before" the `UseRouting()` `middleware`:
+3.Register the middleware below within the `OnApplicationInitialization()` method of `AppModule.cs` "before" the `UseRouting()` `middleware`:
 
 ```csharp
 app.UseIpRateLimiting();
 app.UseClientRateLimiting();
 ```
 
-5、Add the following code at `ConfigureServices()` method 
+4.Add the following code at `ConfigureServices()` method 
 
 ```csharp
   context.Services.AddLimiterService<MemoryCacheRateLimitCounterStore>(service =>
