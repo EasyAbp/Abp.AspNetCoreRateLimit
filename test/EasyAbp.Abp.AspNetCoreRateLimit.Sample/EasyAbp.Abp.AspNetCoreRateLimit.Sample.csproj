@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCoreRateLimit" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="2.3.0" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\EasyAbp.Abp.AspNetCoreRateLimit.Client\EasyAbp.Abp.AspNetCoreRateLimit.Client.csproj" />
+    <ProjectReference Include="..\..\src\EasyAbp.Abp.AspNetCoreRateLimit.Ip\EasyAbp.Abp.AspNetCoreRateLimit.Ip.csproj" />
+    <ProjectReference Include="..\..\src\EasyAbp.Abp.AspNetCoreRateLimit\EasyAbp.Abp.AspNetCoreRateLimit.csproj" />
+  </ItemGroup>
+
+</Project>
+
+

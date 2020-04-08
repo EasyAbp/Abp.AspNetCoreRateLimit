@@ -7,9 +7,9 @@ An Abp module helps you control how often your service is used.
 1.Download and Install the latest `Abp.UsingLimiter` from NuGet or via CLI:
 
 ```
-PM> Install-Package EasyAbp.Abp.UsingLimiter
-PM> Install-Package EasyAbp.Abp.UsingLimiter.Client
-PM> Install-Package EasyAbp.Abp.UsingLimiter.Ip
+PM> Install-Package EasyAbp.Abp.AspNetCoreRateLimit
+PM> Install-Package EasyAbp.Abp.AspNetCoreRateLimit.Client
+PM> Install-Package EasyAbp.Abp.AspNetCoreRateLimit.Ip
 ```
 
    1.  Added `[DependsOn(typeof(AbpClientLimiterModule))]` attribute to the module.
