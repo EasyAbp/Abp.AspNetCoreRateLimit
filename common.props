@@ -6,8 +6,8 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>EasyAbp Team</Authors>
     <Description>ABP vNext framework Limiter module.</Description>
-    <PackageProjectUrl>https://github.com/EasyAbp/Abp.UsingLimiter</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/EasyAbp/Abp.UsingLimiter</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/EasyAbp/Abp.AspNetCoreRateLimit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/EasyAbp/Abp.AspNetCoreRateLimit</RepositoryUrl>
     <PackageTags>abp module easyabp limiter</PackageTags>
     <Company>EasyAbp</Company>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>

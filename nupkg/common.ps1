@@ -5,7 +5,7 @@ $rootFolder = Join-Path $packFolder "../"
 # List of projects
 $projects = (
 
-    "src/EasyAbp.Abp.UsingLimiter",
-    "src/EasyAbp.Abp.UsingLimiter.Client",
-    "src/EasyAbp.Abp.UsingLimiter.Ip"
+    "src/EasyAbp.Abp.AspNetCoreRateLimit",
+    "src/EasyAbp.Abp.AspNetCoreRateLimit.Client",
+    "src/EasyAbp.Abp.AspNetCoreRateLimit.Ip"
 )
