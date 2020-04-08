@@ -5,7 +5,7 @@
     <NoWarn>$(NoWarn);CS1591</NoWarn>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>EasyAbp Team</Authors>
-    <Description>ABP vNext framework Limiter module.</Description>
+    <Description>An Abp module helps you control how often your service is used.</Description>
     <PackageProjectUrl>https://github.com/EasyAbp/Abp.AspNetCoreRateLimit</PackageProjectUrl>
     <RepositoryUrl>https://github.com/EasyAbp/Abp.AspNetCoreRateLimit</RepositoryUrl>
     <PackageTags>abp module easyabp limiter</PackageTags>
