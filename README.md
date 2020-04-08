@@ -18,7 +18,8 @@ PM> Install-Package EasyAbp.Abp.AspNetCoreRateLimit.Ip
 2.Extends IHostBuilder with Limiter configuration methods.
 
 ```csharp
-IHostBuilder.UseAbpLimiter(RateLimitType.All);
+IHostBuilder.UseAspNetCoreRateLimitIp();
+IHostBuilder.UseAspNetCoreRateLimitClient();
 ```
 
 4.Register the middleware below within the `OnApplicationInitialization()` method of `AppModule.cs` "before" the `UseRouting()` `middleware`:

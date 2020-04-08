@@ -18,7 +18,9 @@ namespace EasyAbp.Abp.AspNetCoreRateLimit
         /// <param name="builder">The host builder to configure.</param>
         /// <param name="type"></param>
         /// <returns>The host builder.</returns>
-        public static IHostBuilder UseAbpLimiter(this IHostBuilder builder, RateLimitType type) {
+        [Obsolete("Please use UseAspNetCoreRateLimitClient or UseAspNetCoreRateLimitIp instead.")]
+        public static IHostBuilder UseAbpLimiter(this IHostBuilder builder, RateLimitType type)
+        {
             if (builder == null) throw new ArgumentNullException(nameof(builder));
             builder.ConfigureServices((_, services) =>
             {
@@ -41,6 +43,6 @@ namespace EasyAbp.Abp.AspNetCoreRateLimit
             });
             return builder;
         }
-   
+
     }
 }

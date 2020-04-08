@@ -1,4 +1,6 @@
 using System.Threading.Tasks;
+using EasyAbp.Abp.UsingLimiter.Client;
+using EasyAbp.Abp.UsingLimiter.Ip;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -31,6 +33,7 @@ namespace EasyAbp.Abp.AspNetCoreRateLimit.Sample
                     logging.AddConfiguration(context.Configuration.GetSection("Logging"));
                     logging.AddConsole();
                     logging.AddDebug();
-                }).UseAbpLimiter(RateLimitType.All);
+                }).UseAspNetCoreRateLimitIp()
+                .UseAspNetCoreRateLimitClient();
     }
 }
