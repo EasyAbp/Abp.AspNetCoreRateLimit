@@ -1,10 +1,10 @@
-# Abp.UsingLimiter
+# Abp.AspNetCoreRateLimit
 
 An Abp module helps you control how often your service is used.
 
 # Getting Started
 
-1.Download and Install the latest `Abp.UsingLimiter` from NuGet or via CLI:
+1.Download and Install the latest `Abp.AspNetCoreRateLimit` from NuGet or via CLI:
 
 ```
 PM> Install-Package EasyAbp.Abp.AspNetCoreRateLimit
