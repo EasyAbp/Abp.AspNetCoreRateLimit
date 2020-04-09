@@ -56,6 +56,12 @@ Rate limiting based on client ID
 - [Behavior](https://github.com/stefanprodan/AspNetCoreRateLimit/wiki/ClientRateLimitMiddleware#behavior)
 - [Update rate limits at runtime](https://github.com/stefanprodan/AspNetCoreRateLimit/wiki/ClientRateLimitMiddleware#update-rate-limits-at-runtime)
 
+Advanced configuration
+
+- [Customize the quoata exceeded response](https://github.com/stefanprodan/AspNetCoreRateLimit/wiki/Quota-exceeded-response)
+- [IP / ClientId resolve contributors](https://github.com/stefanprodan/AspNetCoreRateLimit/wiki/Resolve-Contributors)
+- [Use Redis as a distributed counter store](https://github.com/stefanprodan/AspNetCoreRateLimit/wiki/Using-Redis-as-a-distributed-counter-store)
+
 # Roadmap
 
 - [ ] Unit test
