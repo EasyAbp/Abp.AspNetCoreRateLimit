@@ -1,10 +1,10 @@
-# Abp.UsingLimiter
+# Abp.AspNetCoreRateLimit
 
 An Abp module helps you control how often your service is used.
 
 # Getting Started
 
-1.Download and Install the latest `Abp.UsingLimiter` from NuGet or via CLI:
+1.Download and Install the latest `Abp.AspNetCoreRateLimit` from NuGet or via CLI:
 
 ```
 PM> Install-Package EasyAbp.Abp.AspNetCoreRateLimit
@@ -22,14 +22,14 @@ IHostBuilder.UseAspNetCoreRateLimitIp();
 IHostBuilder.UseAspNetCoreRateLimitClient();
 ```
 
-4.Register the middleware below within the `OnApplicationInitialization()` method of `AppModule.cs` "before" the `UseRouting()` `middleware`:
+3.Register the middleware below within the `OnApplicationInitialization()` method of `AppModule.cs` "before" the `UseRouting()` `middleware`:
 
 ```csharp
 app.UseIpRateLimiting();
 app.UseClientRateLimiting();
 ```
 
-5.Add the following code at `ConfigureServices()` method 
+4.Add the following code at `ConfigureServices()` method 
 
 ```csharp
   context.Services.AddLimiterService<MemoryCacheRateLimitCounterStore>(service =>
@@ -55,6 +55,12 @@ Rate limiting based on client ID
 - [Defining rate limit rules](https://github.com/stefanprodan/AspNetCoreRateLimit/wiki/ClientRateLimitMiddleware#defining-rate-limit-rules)
 - [Behavior](https://github.com/stefanprodan/AspNetCoreRateLimit/wiki/ClientRateLimitMiddleware#behavior)
 - [Update rate limits at runtime](https://github.com/stefanprodan/AspNetCoreRateLimit/wiki/ClientRateLimitMiddleware#update-rate-limits-at-runtime)
+
+Advanced configuration
+
+- [Customize the quoata exceeded response](https://github.com/stefanprodan/AspNetCoreRateLimit/wiki/Quota-exceeded-response)
+- [IP / ClientId resolve contributors](https://github.com/stefanprodan/AspNetCoreRateLimit/wiki/Resolve-Contributors)
+- [Use Redis as a distributed counter store](https://github.com/stefanprodan/AspNetCoreRateLimit/wiki/Using-Redis-as-a-distributed-counter-store)
 
 # Roadmap
 
