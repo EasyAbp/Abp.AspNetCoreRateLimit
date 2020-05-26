@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
-using EasyAbp.Abp.UsingLimiter.Client;
-using EasyAbp.Abp.UsingLimiter.Ip;
+using EasyAbp.Abp.AspNetCoreRateLimit.Client;
+using EasyAbp.Abp.AspNetCoreRateLimit.Ip;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;

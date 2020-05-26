@@ -4,7 +4,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using Nito.AsyncEx.Synchronous;
 
-namespace EasyAbp.Abp.UsingLimiter.Client
+namespace EasyAbp.Abp.AspNetCoreRateLimit.Client
 {
     /// <summary>
     ///     Extends <see cref="IHostBuilder"/> with Limiter configuration methods.
