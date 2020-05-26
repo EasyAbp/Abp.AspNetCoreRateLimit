@@ -1,0 +1,32 @@
+name: publish to nuget
+on:
+  push:
+    branches:
+      - master # Default release branch
+jobs:
+  publish:
+    name: list on nuget
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: publish EasyAbp.Abp.AspNetCoreRateLimit.dll
+        uses: brandedoutcast/publish-nuget@v2
+        with:
+          PROJECT_FILE_PATH: src/EasyAbp.Abp.AspNetCoreRateLimit/EasyAbp.Abp.AspNetCoreRateLimit.csproj
+          VERSION_FILE_PATH: common.props
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+
+      - name: publish EasyAbp.Abp.AspNetCoreRateLimit.Client.dll
+        uses: brandedoutcast/publish-nuget@v2
+        with:
+          PROJECT_FILE_PATH: src/EasyAbp.Abp.AspNetCoreRateLimit.Client/EasyAbp.Abp.AspNetCoreRateLimit.Client.csproj
+          VERSION_FILE_PATH: common.props
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+
+      - name: publish EasyAbp.Abp.AspNetCoreRateLimit.Ip.dll
+        uses: brandedoutcast/publish-nuget@v2
+        with:
+          PROJECT_FILE_PATH: src/EasyAbp.Abp.AspNetCoreRateLimit.Ip/EasyAbp.Abp.AspNetCoreRateLimit.Ip.csproj
+          VERSION_FILE_PATH: common.props
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}

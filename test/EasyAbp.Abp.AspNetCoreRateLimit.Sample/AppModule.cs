@@ -47,7 +47,7 @@ namespace EasyAbp.Abp.AspNetCoreRateLimit.Sample
 
             app.UseStaticFiles();
             app.UseRouting();
-            app.UseMvcWithDefaultRouteAndArea();
+            app.UseConfiguredEndpoints();
         }
     }
 }
