@@ -1,5 +1,8 @@
 # Abp.AspNetCoreRateLimit
 
+[![NuGet](https://img.shields.io/nuget/v/EasyAbp.Abp.AspNetCoreRateLimit.svg?style=flat-square)](https://www.nuget.org/packages/EasyAbp.Abp.AspNetCoreRateLimit)
+[![NuGet Download](https://img.shields.io/nuget/dt/EasyAbp.Abp.AspNetCoreRateLimit.svg?style=flat-square)](https://www.nuget.org/packages/EasyAbp.Abp.AspNetCoreRateLimit)
+
 An Abp module helps you control how often your service is used.
 
 # Getting Started
