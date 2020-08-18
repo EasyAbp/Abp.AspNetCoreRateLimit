@@ -1,11 +1,12 @@
 <Project>
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <Version>0.1.5</Version>
+    <Version>0.1.8</Version>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>EasyAbp Team</Authors>
     <Description>An Abp module helps you control how often your service is used.</Description>
+    <PackageIconUrl>https://avatars3.githubusercontent.com/u/58311641?s=128</PackageIconUrl>
     <PackageProjectUrl>https://github.com/EasyAbp/Abp.AspNetCoreRateLimit</PackageProjectUrl>
     <RepositoryUrl>https://github.com/EasyAbp/Abp.AspNetCoreRateLimit</RepositoryUrl>
     <PackageTags>abp module easyabp limiter</PackageTags>
