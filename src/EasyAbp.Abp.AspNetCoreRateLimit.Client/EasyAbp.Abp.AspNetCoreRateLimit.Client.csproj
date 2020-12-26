@@ -3,14 +3,14 @@
   <Import Project="..\..\common.props" />
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>EasyAbp.Abp.AspNetCoreRateLimit.Client</RootNamespace>
     <Description>ABP vNext framework Limiter Client module.</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AspNetCoreRateLimit" Version="3.0.5" />
-    <PackageReference Include="Volo.Abp" Version="3.0.4" />
+    <PackageReference Include="AspNetCoreRateLimit" Version="3.2.2" />
+    <PackageReference Include="Volo.Abp" Version="4.0.2" />
   </ItemGroup>
 
   <ItemGroup>
