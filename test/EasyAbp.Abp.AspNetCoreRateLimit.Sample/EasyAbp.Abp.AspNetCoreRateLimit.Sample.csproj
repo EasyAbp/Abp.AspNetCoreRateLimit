@@ -6,8 +6,8 @@
 
   <ItemGroup>
     <PackageReference Include="AspNetCoreRateLimit" Version="3.2.2" />
-    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="4.0.2" />
-    <PackageReference Include="Volo.Abp.Autofac" Version="4.0.2" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="$(AbpVersion)" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="$(AbpVersion)" />
   </ItemGroup>
 
   <ItemGroup>
