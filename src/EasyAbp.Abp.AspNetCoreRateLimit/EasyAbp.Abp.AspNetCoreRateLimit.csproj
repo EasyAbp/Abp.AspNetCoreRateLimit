@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AspNetCoreRateLimit" Version="3.2.2" />
-    <PackageReference Include="Volo.Abp" Version="$(AbpVersion)" />
+    <PackageReference Include="AspNetCoreRateLimit" Version="4.0.1" />
+    <PackageReference Include="Volo.Abp.Core" Version="$(AbpVersion)" />
   </ItemGroup>
 
 </Project>
