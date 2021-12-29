@@ -17,11 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.AspNetCoreRateL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.Abp.AspNetCoreRateLimit.Sample", "test\EasyAbp.Abp.AspNetCoreRateLimit.Sample\EasyAbp.Abp.AspNetCoreRateLimit.Sample.csproj", "{551D8560-E0F1-4749-8683-BF59CB630E69}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6099E90D-409B-44D3-A499-8854F723191B}"
-	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

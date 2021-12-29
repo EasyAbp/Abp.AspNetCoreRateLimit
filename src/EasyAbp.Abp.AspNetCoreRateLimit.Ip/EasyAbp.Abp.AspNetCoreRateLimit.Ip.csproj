@@ -3,7 +3,7 @@
   <Import Project="..\..\common.props" />
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>EasyAbp.Abp.AspNetCoreRateLimit.Ip</RootNamespace>
     <Description>ABP vNext framework Limiter Ip module.</Description>
   </PropertyGroup>
