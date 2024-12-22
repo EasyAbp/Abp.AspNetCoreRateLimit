@@ -45,7 +45,7 @@ namespace EasyAbp.Abp.AspNetCoreRateLimit.Sample
                 app.UseExceptionHandler("/Error");
             }
 
-            app.UseStaticFiles();
+            app.MapAbpStaticAssets();
             app.UseRouting();
             app.UseConfiguredEndpoints();
         }
